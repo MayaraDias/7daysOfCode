@@ -1,0 +1,112 @@
+html,
+body,
+main,
+header,
+nav,
+div,
+ul,
+li,
+a {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*-------------- variables ----------------------*/
+:root {
+  --header-height: 5rem;
+
+/*---------------- colors -----------------------*/
+--hue:0;
+--body-color: hsl(var(--hue), 0%, 100%);
+--base-color: 
+--title-color: hsl(var(--hue), 0%, 1%);
+--title-color-second: hsl(var(--hue), 60%, 35%);
+--text-color: hsl(var(--hue), 0%, 51%);
+--text-color-button: hsl(var(--hue), 0%, 51%);
+}
+/* ---------------- body ------------------------*/
+
+body{
+  background-color: var(--body-color)
+}
+
+/*--------------- header -------------------------*/
+
+.header{
+  display: flex;
+  height: var(--header-height)
+}
+
+.logo{
+  margin-left: 7rem;
+}
+
+.container{
+  width: 100%;
+  
+}
+
+.navigation{
+  display: flex;
+}
+
+.menu{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20rem;
+  margin-left: 10rem;
+}
+
+.menu ul {
+  display: flex;
+  gap: 1.5rem;
+  
+}
+
+.menu ul li a{
+  color: var(--text-color);
+}
+
+.menu ul li a:hover{
+ color: black;
+}
+
+.buttons{
+  display: flex;
+  gap:1.5rem;
+  align-items:center;
+  margin-left: 3rem;
+
+}
+
+.login,
+.register{
+  padding: .8rem 1rem;
+  border: none;
+  border-radius:0.9rem;
+}
+
+.login:hover{
+  background-color: var(--title-color-second);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+
+}
+
+.register:hover{
+  background-color: var(--title-color-second);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
