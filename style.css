@@ -142,3 +142,28 @@ body{
   line-height: 1.5rem;
 }
 
+.metrics{
+  padding: 0 4rem 2rem;
+  display:grid;
+  gap:2rem;
+  justify-content: center;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.metricNumbers{
+  font-weight:600;
+  font-size: 3.75rem;
+  color:var(--title-color-second);
+  margin-bottom: 0.75rem;
+}
+
+.metricTitle{
+  font-weight:500;
+  font-size:1.125rem;
+  color:#101828;
+}
+
+.metricText{
+  color: var(--text-color);
+ 
+}
