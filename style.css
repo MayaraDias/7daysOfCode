@@ -27,7 +27,7 @@ a {
 /*---------------- colors -----------------------*/
 --hue:0;
 --body-color: hsl(var(--hue), 0%, 100%);
---base-color: 
+--base-color: hsl(220, 43%, 11%);
 --title-color: hsl(var(--hue), 0%, 1%);
 --title-color-second: hsl(var(--hue), 60%, 35%);
 --text-color: hsl(var(--hue), 0%, 51%);
@@ -57,6 +57,7 @@ body{
 
 .navigation{
   display: flex;
+  margin-top: 1.5rem;
 }
 
 .menu{
@@ -110,3 +111,34 @@ body{
   font-weight: bold;
   cursor: pointer;
 }
+
+/*------------------- section aboutUs ----------------------*/
+.aboutUs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem  0;
+}
+
+.aboutUs h3,h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutUs h3{
+  font-weight: 600;
+  color:var(--title-color-second)
+}
+
+.aboutUs h1{
+  font-size:3rem;
+  color: #101828
+}
+
+.aboutUs p{
+  color: var(--text-color);
+  text-align: center;
+  line-height: 1.5rem;
+}
+
