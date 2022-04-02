@@ -33,11 +33,16 @@ a {
 --text-color: hsl(var(--hue), 0%, 51%);
 --text-color-button: hsl(var(--hue), 0%, 51%);
 }
-/* ---------------- body ------------------------*/
+/* ---------------- reusables ------------------------*/
 
 body{
   background-color: var(--body-color)
 }
+
+img{
+  width: 100%;
+}
+
 
 /*--------------- header -------------------------*/
 
@@ -142,7 +147,7 @@ body{
   line-height: 1.5rem;
 }
 
-.metrics{
+.section {
   padding: 0 4rem 2rem;
   display:grid;
   gap:2rem;
@@ -165,5 +170,38 @@ body{
 
 .metricText{
   color: var(--text-color);
- 
+}
+
+/*----------------- section openVacancies -------------*/
+
+.openVacancies{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem  0;
+}
+
+.textOpenVacancies, .titleOpenVacancies, .subtitleOpenVacancies{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subtitleOpenVacancies{
+  color: var(--title-color-second);
+  font-size: 0.875rem;
+  font-weight:medium;
+}
+
+.openVacancies h2{
+  font-size: 2.25rem;
+  font-weight: regular;
+  color: #101828;
+}
+
+.textOpenVacancies{
+  color: var(--text-color);
+  text-align: center;
+  line-height: 1.5rem;
+  margin-bottom: 4rem;
 }
