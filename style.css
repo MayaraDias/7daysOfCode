@@ -43,13 +43,12 @@ img{
   width: 100%;
 }
 
-
-/*--------------- header -------------------------*/
-
-.header{
-  display: flex;
-  height: var(--header-height)
+.container{
+  width: 1300px;
 }
+
+
+/*--------------- nav -------------------------*/
 
 .logo{
   margin-left: 7rem;
@@ -57,20 +56,18 @@ img{
 
 .container{
   width: 100%;
-  
 }
 
 .navigation{
   display: flex;
+  justify-content: space-between;
   margin-top: 1.5rem;
 }
 
 .menu{
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-right: 20rem;
-  margin-left: 10rem;
+  justify-content: space-between;
 }
 
 .menu ul {
@@ -91,7 +88,7 @@ img{
   display: flex;
   gap:1.5rem;
   align-items:center;
-  margin-left: 3rem;
+  margin-right: 3rem;
 
 }
 
